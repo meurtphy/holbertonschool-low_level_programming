@@ -27,7 +27,7 @@ printf("the last digit of %d is %d the string and is 0\n", n, last_digit);
 }
 else
 {
-printf("the last digit of %d is less than 6 and not 0\n", n, last digit);
+printf("the last digit of %d is less than 6 and not 0\n", n, last_digit);
 }
 
 return (0);
