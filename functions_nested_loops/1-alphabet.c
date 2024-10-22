@@ -2,7 +2,7 @@
 /**
 * main -  prints _putchar, followed by a new line
 *
-*Description: Prints a quote using the puts function
+* Description: Prints a quote using the puts function
 * Return: Always 0 (Success)
 */
 void print_alphabet(void)
