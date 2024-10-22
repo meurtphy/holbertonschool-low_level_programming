@@ -15,7 +15,7 @@ int x;
 
 for (x = 0 ; x <= 9 ; c++)
 {
-putchar(0);
+putchar(x + '0');
 }
 
 putchar('\n');
