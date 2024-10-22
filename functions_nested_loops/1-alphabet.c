@@ -9,7 +9,7 @@ char i = "abcdefghijklmnopqrstuvwxyz";
 
 for (int i = 0; i < 26; i++)
 {
-putchar(alphabet[i];
+putchar('i');
 }
 
 putchar('\n');
