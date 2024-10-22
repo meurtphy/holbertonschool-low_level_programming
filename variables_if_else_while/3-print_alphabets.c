@@ -1,17 +1,24 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
 /**
- * main - Entry point of the program
+ * main - Prints the alphabet in uppercase
  *
- * Description: Prints a quote using the puts function
+ * Description: This program prints the alphabet in uppercase,
+ * followed by a new line. Only putchar can be used.
  * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
-for(int x = 'A'; x <= 'Z'; x++
-x = tolower(x)
-putchar(x)
+char c;
+
+for (c = 'A' ; c <= 'Z' ; c++)
+{
+putchar(c);
 }
 
-return 0;
+putchar('\n');
 
+return (0);
 }
