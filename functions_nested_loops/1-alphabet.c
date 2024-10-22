@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* main -  prints _putchar, followed by a new line
+* print_alphabet -  prints _putchar, followed by a new line
 *
 * Description: Prints a quote using the puts function
 * Return: Always 0 (Success)
