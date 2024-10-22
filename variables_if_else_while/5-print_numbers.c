@@ -13,7 +13,7 @@ int main(void)
 {
 int x;
 
-for (x = 0 ; x <= 10 ; c++)
+for (x = 0 ; x <= 9 ; c++)
 {
 putchar(0);
 }
