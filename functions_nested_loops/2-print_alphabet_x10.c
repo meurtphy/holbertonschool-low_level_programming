@@ -1,24 +1,24 @@
 #include "main.h"
+#include <stdio.h>
 /**
-* print_alphabet -  prints _putchar, followed by a new line
+* print_alphabet_x10 - Imprime l'alphabet 10 fois
 *
-* Description: Prints a quote using the puts function
-* Return: Always 0 (Success)
+* Description: Utilise _putchar pour imprimer l'alphabet en
+*              minuscule dix fois, suivi d'une nouvelle ligne.
+* Return: void
 */
-void print_alphabet(void)
-{
-char c;
-int i = 0;
 
-while (i < 10)
+void print_alphabet_x10(void)
 {
-c = 'a';
-while (c <= 'z')
+int num;
+const char *alphabet = "abcdefghijklmnopqrstuvwxyz\n";
+
+for (num = 0; num < 10; num++)
 {
-_putchar(c);
-(c++);
+const char *current = alphabet;
+while (*current)
+{
+_putchar(*current++);
 }
-_putchar('n\');
-(i++);
 }
-}
+
