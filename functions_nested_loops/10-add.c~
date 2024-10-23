@@ -1,0 +1,6 @@
+
+
+int a
+int b
+
+_putchar(%d = a + b);
