@@ -7,10 +7,9 @@ if (n <= 0)
 {
 _putchar('\n');
 }
-while (n > 0);
+while (n > 0)
 {
-_putchar("\\");
+_putchar('92');
 }
- _putchar('\');
-}
+_putchar('\');}
 }
