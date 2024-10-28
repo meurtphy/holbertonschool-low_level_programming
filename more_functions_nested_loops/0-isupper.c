@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include main.h
+#include <main.h>
 /**
 * _isupper - Verifie si un caractere est en majuscule
 * @c: Le caractere a verifer
