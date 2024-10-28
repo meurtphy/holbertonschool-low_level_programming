@@ -2,7 +2,7 @@
 /**
 * print_number - Prints the number from 0 to 9, followed by a new line
 */
-void print_numbers(void)
+void more_numbers(void)
 {
 int i, j;
 for (i = 0; i < 10; i++)
