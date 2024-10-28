@@ -11,7 +11,7 @@
  *
  * Return: The product of the integers a and b
  */
-int mul(int a, int b)
+int mul(int a, int b);
 {
 return (a * b);
 }
