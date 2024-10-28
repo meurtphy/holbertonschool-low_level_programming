@@ -1,20 +1,18 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
-* _isupper - Verifie si un caractere est en majuscule
-* @c: Le caractere a verifer
+* _isupper - cheks character
+* @c: character to check
 *
-*return 1 si c est en majuscule sinon, 0 sinon
+* return: return 1 or 0
 */
+
 int _isupper(int c)
 {
 if (c >= 'A' && c <= 'Z')
-{
 return (1);
-}
 else
-{
 return (0);
-}
 }
 
