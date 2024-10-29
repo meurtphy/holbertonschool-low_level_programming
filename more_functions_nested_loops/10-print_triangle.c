@@ -5,8 +5,8 @@
  */
 void print_triangle(int size)
 {
-int row;
-int colomn;
+int gri;
+int tri;
 
 if (n <= 0)
 {
@@ -14,13 +14,13 @@ _putchar('\n');
 }
 else
 {
-for (row = 0; row < n; row--)
+for (gri = 0; gri < n; gri++)
 {
-for (colomn = 0; colomn < n; colomn--)
+for (tri = 0; tri < n; tri--)
 {
-if (colomn == row)
+if (gri == tri)
 _putchar('#');
-else if (colomn < row)
+else if (gri < tri)
 _putchar(' ');
 }
 _putchar('\n');
