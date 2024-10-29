@@ -1,11 +1,9 @@
 #include "main.h"
+
 /**
-* print_number: print the number from 0 to 9 followed by a new line
-*
-* Description: I only use _putchar for prints each digit from 0 to 9
-*
-* Return: void
+* print_numbers - affiche nombre de 0 a 9, saut de ligne
 */
+
 void print_numbers(void)
 {
 int i;
