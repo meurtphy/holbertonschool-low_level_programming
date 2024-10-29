@@ -14,9 +14,10 @@ while (s[lenght] != '\0')
 {
 lenght++;
 }
-for (int i = 0; i < length / 2; i++)
+for (i = 0; i < lenght / 2; i++)
 {
 temp = s[i];
 s[i] = s[lenght - i - 1];
 s[lenght - i - 1] = temp;
+}
 }
