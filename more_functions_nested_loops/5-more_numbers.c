@@ -1,6 +1,6 @@
 #include "main.h"
 /**
-* print_numbers - Prints the number from 0 to 9, followed by a new line
+* more_numbers - affiche les nombres 10x, de 0 a 14
 */
 void more_numbers(void)
 {
