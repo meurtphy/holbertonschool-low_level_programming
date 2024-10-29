@@ -1,9 +1,8 @@
 #include "main.h"
 /**
-* print_number - Prints the number from 0 to 9, followed by a new line
+* print_number: print the number from 0 to 9 followed by a new line
 *
-* Description: Prints each digit from 0 to 9
-* using _putchar, followed by a newline character
+* Description: I only use _putchar for prints each digit from 0 to 9
 *
 * Return: void
 */
