@@ -9,14 +9,13 @@
 void print_rev(char *s)
 {
 int i;
-int j;
 int legt;
  
 for (i = 0; s[i] != '\0'; i++)
 {
 legt = i;
-for (j = legt - 1; 0 <= j; j--)
-_putchar(s[legt]);
+for (i = legt - 1; i >= 0; i--)
+_putchar(s[i]);
 }
 _putchar('\n');
 }
