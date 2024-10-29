@@ -1,24 +1,25 @@
-#include <stdio.h>
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * print_rev - Prints a string in reverse, followed by a new line
+ * @s: The string to be printed in reverse
  */
 void print_rev(char *s)
 {
-int i;
-int j;
-int legt;
- 
-for (i = 0; s[i] != '\0'; i++)
-{
-legt = i;
-for (j = legt - 1; 0 <= j; j--)
-_putchar(s[j]);
-}
-_putchar('\n');
-}
-       
-   
+    int i = 0;
+    int legt;
+
+    // Calculer la longueur de la chaîne
+    while (s[i] != '\0')
+    {
+        i++;
+    }
+    legt = i;
+
+    // Afficher la chaîne en ordre inverse
+    for (i = legt - 1; i >= 0; i--)
+    {
+        _putchar(s[i]);
+    }
+    _putchar('\n');
+}   
