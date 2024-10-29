@@ -1,12 +1,11 @@
 #include "main.h"
 /**
- * print_diagonal - draws a diagonal line on the terminal
+ * print_triangle - draws a triangle line on the terminal
  * @n: number of times the character \ should be printed
  */
 void print_triangle(int size)
 {
-int gri;
-int tri;
+int gri, tri;
 
 if (size <= 0)
 {
@@ -16,11 +15,11 @@ else
 {
 for (gri = 0; gri < size; gri++)
 {
-for (tri = 0; tri <= size; tri++)
+for (tri = 0; tri <= gri; tri++)
 {
 if (gri == tri)
 _putchar('\\');
-else if (gri < tri)
+else (gri < tri)
 _putchar('#');
 }
 _putchar('\n');
