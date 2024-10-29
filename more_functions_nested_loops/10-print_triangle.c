@@ -16,12 +16,12 @@ else
 {
 for (gri = 0; gri < n; gri++)
 {
-for (tri = 0; tri < n; tri--)
+for (tri = 0; tri < n; tri++)
 {
 if (gri == tri)
 _putchar('#');
 else if (gri < tri)
-_putchar(' ');
+_putchar('#');
 }
 _putchar('\n');
 }
