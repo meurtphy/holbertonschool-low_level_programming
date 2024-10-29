@@ -7,19 +7,19 @@
 *
 *
 */
-void print_square(int size);
-int size;
-int row;
-int col;
+void print_square(int size)
+{
+int row, col;
 if (size <= 0)
 {
-_putchar ('\');
+_putchar ('\n');
 }
 
-for (int row = 0; row < size; row++)
+for (row = 0; row < size; row++)
 {
-for (int col = 0; col < size; col++
+for (col = 0; col < size; col++)
 _putchar('#');
+{
 }
 _putchar('\n');
 }
