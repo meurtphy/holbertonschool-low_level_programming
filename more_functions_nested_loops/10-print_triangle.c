@@ -19,7 +19,7 @@ for (tri = 0; tri < size -gri -1; tri ++)
 {
 _putchar(' ');
 }
-for (tri = 0; tri <= gri; gri++
+for (tri = 0; tri <= gri; tri++)
 {
 _putchar('#');
 }
