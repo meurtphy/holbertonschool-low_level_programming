@@ -14,9 +14,9 @@ _putchar('\n');
 }
 else
 {
-for (gri = 0; gri < n; gri++)
+for (gri = 0; gri < size; gri++)
 {
-for (tri = 0; tri <= n; tri++)
+for (tri = 0; tri <= size; tri++)
 {
 if (gri == tri)
 _putchar('\\');
