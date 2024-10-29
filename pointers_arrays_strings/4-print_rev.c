@@ -18,7 +18,7 @@ legt = i;
 for (j = legt - 1; 0 <= j; j--)
 _putchar(s[j]);
 }
-_putchar('/');
+_putchar('\n');
 }
        
    
