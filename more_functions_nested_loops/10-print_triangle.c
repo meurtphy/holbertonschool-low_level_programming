@@ -19,7 +19,7 @@ for (tri = 0; tri <= gri; tri++)
 {
 if (gri == tri)
 _putchar('\\');
-else (gri < tri)
+else
 _putchar('#');
 }
 _putchar('\n');
