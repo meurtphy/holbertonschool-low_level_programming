@@ -6,12 +6,18 @@
  *
  * 
  */
-int main(void)
+void rev_string(char *s);
 {
-char s[10] = "My School";
-strrev(s);
-printf("%s\n", s);
-rev_string(s);
-printf("%s\n", s);
-return (0);
+int length = 0;
+char temp;
+while (s[length] != '\0')  
+{
+lenght++;
+}
+for (int i = 0; i < length / 2; i++)
+{
+temp = s[i];
+s[i] = s[lenght - i - 1];
+s[lenght - i - 1] = temp;
+}
 }
