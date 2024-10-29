@@ -20,4 +20,3 @@ temp = s[i];
 s[i] = s[lenght - i - 1];
 s[lenght - i - 1] = temp;
 }
-}
