@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
-* print_most_number - Prints the number from 0 to 9, followed by a new line
+* print_most_numbers - Prints the number from 0 to 9, followed by a new line
 *
 * Description: Uses _putchar to print digit from 0 to 9, and skipping
 * the digit 2 and 4
