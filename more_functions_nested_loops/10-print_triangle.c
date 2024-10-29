@@ -8,7 +8,7 @@ void print_triangle(int size)
 int gri;
 int tri;
 
-if (n <= 0)
+if (size <= 0)
 {
 _putchar('\n');
 }
@@ -16,10 +16,10 @@ else
 {
 for (gri = 0; gri < n; gri++)
 {
-for (tri = 0; tri < n; tri++)
+for (tri = 0; tri <= n; tri++)
 {
 if (gri == tri)
-_putchar('#');
+_putchar('\\');
 else if (gri < tri)
 _putchar('#');
 }
