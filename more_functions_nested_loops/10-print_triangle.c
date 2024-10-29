@@ -15,11 +15,12 @@ else
 {
 for (gri = 0; gri < size; gri++)
 {
-for (tri = 0; tri <= gri; tri++)
+for (tri = 0; tri < size -gri -1; tri ++)
 {
-if (gri == tri)
-_putchar('\\');
-else
+_putchar(' ');
+}
+for (tri = 0; tri <= gri; gri++
+{
 _putchar('#');
 }
 _putchar('\n');
