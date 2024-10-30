@@ -1,0 +1,23 @@
+#include "main.h"
+#include <stdio.h>
+/**
+* main - check the code
+*
+* Return: Always 0.
+*/
+void puts_half(char *str)
+{
+int *start = str; 
+int length = 0;
+while (*str != '\0')
+{
+length++;
+str++;
+}
+if (length % 2 == 0)
+{
+start += length /2;
+}
+else
+{
+  start += (length - 1) 
