@@ -1,21 +1,29 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
- * print_array - Prints n elements of an array of integers
- * @a: Pointer to the array of integers
- * @n: Number of elements to print
- */
-void print_array(int *a, int n)
+* _atoi - Converts a string to an integer.
+* @s: The string to convert.
+*
+* Return: The converted integer or 0 if no numbers are present.
+*/
+int _atoi(char *s)
 {
-int i;
-for (i = 0; i < n; i++)
+int result = 0;
+int sign = 1;
+int digit_found = 0;
+while (*s)
 {
-printf("%d", a[i]);
-if (i < n - 1)
+if (*s == '-')
+sign *= -1;
+else if (*s >= '0' && *s <= '9')
 {
-printf(", ");
+digit_found = 1;
+result = result * 10 + (*s - '0');
 }
+else if (digit_found)
+break;
+s++;
 }
-printf("\n");
+return (result * sign);
 }
 
