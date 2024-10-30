@@ -16,4 +16,4 @@ int _atoi(char *s);
 
 
 
-#endif /* MAIN_ */
+#endif /* MAIN_H */
