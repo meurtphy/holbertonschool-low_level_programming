@@ -1,0 +1,16 @@
+#include "main.h"
+#include <stdio.h>
+/**
+* main - check the code
+*
+* Return: Always 0.
+*/
+void _puts2(char *str)
+{
+int i;
+for (i = 0; str[i] != '\0'; i+= 2)
+{
+_putchar(str[i]);
+}
+_putchar('\n');
+}
