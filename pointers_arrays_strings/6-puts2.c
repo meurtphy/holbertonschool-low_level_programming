@@ -5,7 +5,7 @@
 *
 * Return: Always 0.
 */
-void _puts2(char *str)
+void puts2(char *str)
 {
 int i;
 for (i = 0; str[i] != '\0'; i+= 2)
