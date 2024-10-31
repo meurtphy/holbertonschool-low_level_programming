@@ -11,14 +11,14 @@ int i;
 int bebe;
 while (dest[i] != '\0')
 {
-i++
+i++;
 }
 while (src[bebe] = '\0')
 {
 dest[i] = src[bebe];
 i++;
 bebe++;
-   }
+}
 desti{i]='\0'
 retunr (dest);
 }
