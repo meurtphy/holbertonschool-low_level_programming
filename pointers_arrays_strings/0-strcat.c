@@ -1,25 +1,26 @@
-#include <stdio.h>
 #include "main.h"
+#include <stdio.h>
 /**
-* main - check the code
+* _strcat - Concatène la chaîne src à la fin de la chaîne dest.
+* @dest: La chaîne de destination où src sera ajoutée.
+* @src: La chaîne source à ajouter à dest.
 *
-* Return: Always 0.
+* Return: Un pointeur vers la chaîne résultante dest.
 */
 char *_strcat(char *dest, char *src)
 {
 int i = 0;
-int bebe = 0;
+int j = 0;
 while (dest[i] != '\0')
 {
 i++;
 }
-while (src[bebe] == '\0')
+while (src[j] != '\0')
 {
-dest[i] = src[bebe];
+dest[i] = src[j];
 i++;
-bebe++;
+j++;
 }
-dest[i]='\0';
-return (dest);
-}
-   
+dest[i] = '\0';
+return dest;
+}   
