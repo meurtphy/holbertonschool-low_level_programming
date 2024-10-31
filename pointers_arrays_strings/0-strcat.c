@@ -19,7 +19,7 @@ dest[i] = src[bebe];
 i++;
 bebe++;
 }
-dest[i]='\0'
+dest[i]='\0';
 return (dest);
 }
    
