@@ -1,11 +1,14 @@
 #include <stdio.h>
 #include "main.h"
-/** 
-*_strncat - concatene deux chaine de caracteres 
+
+/**
+*_strncat - concatene deux chaine de caracteres
 *
 *@dest: la chaine de destination.
 *@src: la chaine source a ajouter.
-*@n: le nombre maximun de caracteres provenant de dest.
+*@_strncat: function is similar to the _strcat function, except that
+it will use at most n bytes from src; and
+src.
 */
 char *_strncat(char *dest, char *src, int n)
 {
