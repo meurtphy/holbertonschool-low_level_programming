@@ -17,7 +17,7 @@ while (i < j)
 bebemouche = a[i];
 a[i] = a[j];
 a[j] = bebemouche;
-i++
-j--
+i++;
+j--;
 }
 }
