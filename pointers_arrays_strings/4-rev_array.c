@@ -9,13 +9,15 @@
 */
 void reverse_array(int *a, int n)
 {
-while (i= 0; i < n);
+int i = 0;
+int j = n - 1;
+int bebemouche;
+while (i < j)
 {
-if (i != 0)
-printf(", ");
-}
-printf("%d", a[i]);
+bebemouche = a[i];
+a[i] = a[j];
+a[j] = bebemouche;
 i++
+j--
 }
-printf("\n");
 }
