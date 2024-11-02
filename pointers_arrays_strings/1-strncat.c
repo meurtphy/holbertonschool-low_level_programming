@@ -17,9 +17,10 @@ i++;
 }
 while (j < n && src[j] != '\0')
 {
+dest[i] = src[j];
 i++;
 j++;
 }
-while (dest[i] = j)
+dest[i] = '\0';
 return (dest);
 }
