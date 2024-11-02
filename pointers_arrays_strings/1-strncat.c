@@ -20,7 +20,7 @@ while (j < n && src[j] != '\0')
 i++;
 j++;
 }
-while (dest[i] = '\0')
+for (dest[i] = '\0')
 {
 i--;
 }
