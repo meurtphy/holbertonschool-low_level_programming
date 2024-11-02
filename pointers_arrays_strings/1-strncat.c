@@ -20,6 +20,6 @@ while (j < n && src[j] != '\0')
 i++;
 j++;
 }
-while (dest[i] = n)
+while (dest[i] = j)
 return (dest);
 }
