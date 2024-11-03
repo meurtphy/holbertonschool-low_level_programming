@@ -17,8 +17,8 @@ char *leet(char *str) {
 int i,j;	
 char to_replace[] = {'a', 'A', 'e', 'E', 'o', 'O', 't', 'T', 'l', 'L'};
 char replacements[] = {'4', '4', '3', '3', '0', '0', '7', '7', '1', '1'};
-for (int i = 0; str[i] != '\0'; i++) {
-for (int j = 0; j < 10; j++) {
+for (i = 0; str[i] != '\0'; i++) {
+for (j = 0; j < 10; j++) {
 if (str[i] == to_replace[j]) {
 str[i] = replacements[j];
 break;
