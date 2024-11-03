@@ -6,10 +6,9 @@
 *
 *@dest: la chaine de destination.
 *@src: la chaine source a ajouter.
-*@_strncat: function is similar to the _strcat function, except that
-it will use at most n bytes from src; and
-src.
+*@_strncat: function is similar to the _strcat function.
 */
+
 char *_strncat(char *dest, char *src, int n)
 {
 int i = 0;
