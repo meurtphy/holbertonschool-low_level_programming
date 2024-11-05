@@ -2,27 +2,21 @@
 #include <stdio.h>
 
 /**
- * _strstr - Finds the first occurrence of the substring needle in the string haystack.
- * @haystack: The main string to be examined.
- * @needle: The substring to be searched.
- *
- * Return: A pointer to the beginning of the located substring,
- *         or NULL if the substring is not found.
+ * print_diagsums - Prints the sums of the two diagonals of a square matrix.
+ * @a: Pointer to the first element of the square matrix (1D array).
+ * @size: The size of one side of the square matrix (number of rows/columns).
  */
-char *_strstr(char *haystack, char *needle)
+void print_diagsums(int *a, int size)
 {
-    int i, j;
+    int sum1 = 0, sum2 = 0;
+    int i;
 
-    if (*needle == '\0')  // Si needle est vide, retourne haystack
-        return haystack;
+    for (i = 0; i < size; i++) 
+    {
+        sum1 += a[i * size + i];
 
-    for (i = 0; haystack[i] != '\0'; i++) {
-        for (j = 0; needle[j] != '\0'; j++) {
-            if (haystack[i + j] != needle[j])  // Vérifie la correspondance
-                break;
-        }
-        if (needle[j] == '\0')  // Si on a atteint la fin de needle
-            return &haystack[i];
+        sum2 += a[i * size + (size - i - 1)];
     }
-    return NULL;
+
+    printf("%d, %d\n", sum1, sum2);
 }
