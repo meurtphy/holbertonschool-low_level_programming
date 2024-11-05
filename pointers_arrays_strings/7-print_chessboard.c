@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
  * print_chessboard - Imprime l'échiquier.
  * @a: Pointeur vers un tableau de 8x8 caractères.
