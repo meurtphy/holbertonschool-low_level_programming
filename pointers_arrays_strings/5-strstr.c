@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stddef.h>
 /**
  * _strstr - Finds the first occurrence of the substring needle in the string haystack.
  * @haystack: The main string to be examined.
