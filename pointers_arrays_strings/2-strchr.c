@@ -1,26 +1,31 @@
 #include "main.h"
-/**
-* _strchr - Localise un caractère dans une chaîne
-* @s: La chaîne à parcourir
-* @c: Le caractère à rechercher
-*
-* Return: Un pointeur vers la première occurrence du caractère c
-*         dans la chaîne s, ou NULL si le caractère n'est pas trouvé.
-*/
 
-char *_strchr(char *s, char c)
+/**
+ * _strspn - Calcule la longueur du préfixe de `s` contenant seulement des caractères dans `accept`.
+ * @s: La chaîne source.
+ * @accept: La chaîne des caractères acceptés.
+ *
+ * Return: Le nombre de caractères dans le préfixe de `s` présents dans `accept`.
+ */
+unsigned int _strspn(char *s, char *accept)
 {
-    while (*s != '\0')
+    unsigned int count = 0;
+    int i;
+
+    while (*s)  // Parcourt chaque caractère de `s`
     {
-        if (*s == c)
+        for (i = 0; accept[i]; i++)  // Parcourt chaque caractère de `accept`
         {
-            return (s);
+            if (*s == accept[i])  // Si on trouve une correspondance
+            {
+                count++;  // Incrémente le compteur
+                break;
+            }
         }
-        s++;
+        if (!accept[i])  // Si aucun caractère dans `accept` ne correspond
+            break;
+        s++;  // Passe au caractère suivant de `s`
     }
-    if (c == '\0')  // Si on cherche le caractère nul, retourne le pointeur vers lui.
-    {
-        return (s);
-    }
-    return (NULL);  // Caractère non trouvé
+
+    return count;
 }

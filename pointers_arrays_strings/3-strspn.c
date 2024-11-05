@@ -1,35 +1,32 @@
 #include "main.h"
-
 /**
- * _strspn - Obtient la longueur du préfixe de `s` composé seulement de caractères dans `accept`
- * @s: La chaîne source
- * @accept: La chaîne contenant les caractères acceptés
+ * _strspn - gets the length of a prefix substring
  *
- * Return: Nombre de caractères dans le préfixe de `s` présents dans `accept`
+ * @s: segment to return bytes from
+ * @accept: the bytes to include
+ *
+ * Return: the number of bytes in the initial segment of @s which consist only
+ * of bytes from @accept
  */
+
 unsigned int _strspn(char *s, char *accept)
 {
-    unsigned int i, j;
-    unsigned int count = 0;
-    int found;
+	int i, j;
+	int c = 0;
 
-    for (i = 0; s[i] != '\0'; i++)
-    {
-        found = 0;  // Réinitialise la variable pour chaque caractère de s
+	for (i = 0; s[i] != '\0'; i++)
+	{
+		if (s[i] != 32)
+		{
+			for (j = 0; accept[j] != '\0'; j++)
+			{
+				if (s[i] == accept[j])
+					c++;
+			}
+		}
+		else
+			return (c);
 
-        for (j = 0; accept[j] != '\0'; j++)
-        {
-            if (s[i] == accept[j])
-            {
-                found = 1;
-                count++;
-                break;
-            }
-        }
-
-        if (!found)
-            break;
-    }
-
-    return count;
+	}
+	return (c);
 }

@@ -11,16 +11,16 @@ char *_strpbrk(char *s, char *accept)
 {
     int i, j;
 
-    for (i = 0; s[i] != '\0'; i++)  // Parcourir chaque caractère de `s`
+    for (i = 0; s[i] != '\0'; i++)
     {
-        for (j = 0; accept[j] != '\0'; j++)  // Vérifier chaque caractère de `accept`
+        for (j = 0; accept[j] != '\0'; j++)
         {
-            if (s[i] == accept[j])  // Correspondance trouvée
+            if (s[i] == accept[j])
             {
-                return &s[i];  // Retourne un pointeur vers le caractère correspondant dans `s`
+                return &s[i];
             }
         }
     }
 
-    return NULL;  // Aucun des caractères n'est trouvé
+    return NULL;
 }
