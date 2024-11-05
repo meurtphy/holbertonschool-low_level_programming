@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _strchr - Localise un caractère dans une chaîne.
  * @s: La chaîne de caractères.
@@ -10,20 +9,15 @@
  */
 char *_strchr(char *s, char c)
 {
-    while (*s != '\0')
-    {
-        if (*s == c)
-        {
-            return (s);
-        }
-        s++;
-    }
+	while (*s)
+	{
+		if (*s != c)
+			s++;
+		else
+			return (s);
+	}
+	if (c == '\0')
+		return (s);
 
-    // Vérifie également si le caractère recherché est le caractère nul
-    if (*s == c)
-    {
-        return (s);
-    }
-
-    return (NULL);
+	return (NULL);
 }
