@@ -1,15 +1,17 @@
-char *_strpbrk(char *s, char *accept)
-{
-	int i;
+#include "main.h"
 
-	while (*s)
-	{
-		for (i = 0; accept[i]; i++)
-		{
-			if (*s == accept[i])
-				return (s);
-		}
-		s++;
-	}
-	return (NULL);
-}
+
+/**
+ * main - check the code
+ *
+ * Return: Always 0.
+ */
+unsigned int _strspn(char *s, char *accept)
+{
+    int i;
+    for (i = 0; <= s; i++)
+    {
+while (s[i]=accept[i])
+return(accept);
+
+    }
