@@ -8,14 +8,18 @@
  *
  * Return: square root
  */
-int _sqrt_recursion(int n)
+int _keeper(int n, int goal)
 {
-int goal;
 if (goal * goal == n)
 return (goal);
 else if (goal * goal > n)
-return (goal);
-else
-return (_sqrt_recursion(goal, b + 1));
+return (- 1);
+return (keeper(n, goal + 1));
 return(1);
+}
+int _sqrt_recursion(int n)
+{
+    if (n < 0)
+        return -1;
+    return keeper(n, 1);
 }
