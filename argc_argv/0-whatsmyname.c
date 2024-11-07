@@ -1,14 +1,15 @@
-#include <stdio.>
-/**
- * 
- * 
- * 
- */
-int main(int argc, char * argv[])
-{
-for(int i = 0; i < argc; i++)
-printf("%s\n", argv[i]);
+#include <stdio.h>
 
-return('\n');   
+/**
+ * main - Prints the program's name, followed by a new line.
+ * @argc: Argument count (unused in this program).
+ * @argv: Argument vector (array of strings).
+ *
+ * Return: Always 0.
+ */
+int main(__attribute__((unused)) int argc, char *argv[])
+{
+    printf("%s\n", argv[0]);  // Prints the program name followed by a newline
+    return 0;
 }
 
