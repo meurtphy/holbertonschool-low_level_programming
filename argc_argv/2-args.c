@@ -1,4 +1,5 @@
-#include <stdio.>
+#include <stdio.h>
+
 /**
  * main - Prints all arguments it receives, each on a new line.
  * @argc: The number of arguments.
@@ -8,10 +9,12 @@
  */
 int main(int argc, char *argv[])
 {
-int i;
-if (i = 0; i < argc; i++)
-{
-printf("%s/n", argc[i]);
-}
-return (0);
+    int i;
+
+    for (i = 0; i < argc; i++)
+    {
+        printf("%s\n", argv[i]);
+    }
+
+    return (0);
 }
