@@ -8,10 +8,10 @@
  *
  * Return: Always 0 (Success)
  */
-int main(int argc, __attribute__((unused)) char *argv[])
+int main(int argc, char *argv[])
 {
-    // Print the number of arguments, excluding the program name itself
-    printf("%d\n", argc - 1);
+void(argv)
+printf("%d\n", argc - 1);
 
-    return 0;
+return (0);
 }
