@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stddef.h>
 /**
  * _strchr - multiply numbers
  * @s: variable for the first number
@@ -18,6 +17,6 @@ return (s);
 }
 s++;
 }
-return (NULL);
+return (0);
 
 }
