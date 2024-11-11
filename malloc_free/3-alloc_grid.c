@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include "main.h"
+
 /**
  * alloc_grid - Allocates a 2D grid and initializes all elements to 0.
  * @width: Width of the grid.
@@ -9,23 +10,33 @@
  */
 int **alloc_grid(int width, int height)
 {
-int **greedo;
+int **grid;
 int i, j;
+
+
 if (width <= 0 || height <= 0)
 return (NULL);
-greedo = malloc(height * sizeof(int *));
-if (greedo == NULL)
+
+
+grid = malloc(height * sizeof(int *));
+if (grid == NULL)
 return (NULL);
+
 for (i = 0; i < height; i++)
 {
-greedo[i] = malloc(width * sizeof(int *));
-if (greedo[i] == NULL)
-return (NULL);
+grid[i] = malloc(width * sizeof(int));
+if (grid[i] == NULL)
 {
-for (j = 0; j < i; j++)
+ for (j = 0; j < i; j++)
+free(grid[j]);
+free(grid);
+return (NULL);
+}
+for (j = 0; j < width; j++)
 grid[i][j] = 0;
-
 }
-return (greedo);
 
+return (grid);
 }
+
+
