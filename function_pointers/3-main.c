@@ -8,8 +8,8 @@
  */
 void handle_error(int status)
 {
-    printf("Error\n");
-    exit(status);
+printf("Error\n");
+exit(status);
 }
 
 /**
@@ -41,4 +41,6 @@ result = operation(num1, num2);
 printf("%d\n", result);
 
 return (0);
+
 }
+
