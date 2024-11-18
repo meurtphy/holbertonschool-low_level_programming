@@ -1,52 +1,38 @@
+#include "3-calc.h"
 #include <stdio.h>
 #include <stdlib.h>
-/**
- * op_add - entry point
- * @a: get number 1
- * @b: get number 2
- * Return: add between a and b
- */
+
 int op_add(int a, int b)
 {
-	return (a + b);
+return (a + b);
 }
-/**
- * op_sub - entry point
- * @a: get number 1
- * @b: get number 2
- * Return: return subtation between a and b
- */
+
 int op_sub(int a, int b)
 {
-	return (a - b);
+return (a - b);
 }
-/**
- * op_mul - entry point
- * @a: get number 1
- * @b: get number 2
- * Return: return multiplication between a and b
- */
+
 int op_mul(int a, int b)
 {
-	return (a * b);
+return (a * b);
 }
-/**
- * op_div - entry point
- * @a: get number 1
- * @b: get number 2
- * Return: return division between a and b
- */
+
 int op_div(int a, int b)
 {
-	return (a / b);
+if (b == 0)
+{
+printf("Error\n");
+exit(100);
 }
-/**
- * op_mod - entry point
- * @a: get number 1
- * @b: get number 2
- * Return: return module between a and b
- */
+return (a / b);
+}
+
 int op_mod(int a, int b)
 {
-	return (a % b);
+if (b == 0)
+{
+printf("Error\n");
+exit(100);
+}
+return (a % b);
 }
