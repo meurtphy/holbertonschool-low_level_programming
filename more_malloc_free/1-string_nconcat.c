@@ -8,7 +8,7 @@
  * @s2: Deuxième chaîne.
  * @n: Nombre de caractères de s2 à ajouter.
  *
- * Return: Pointeur vers la nouvelle chaîne concaténée, ou NULL en cas d'échec.
+ * Return: Pointeur vers la nouvelle chaîne concaténée,
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
