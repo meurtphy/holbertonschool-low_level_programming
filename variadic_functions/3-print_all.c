@@ -8,43 +8,41 @@
  */
 void print_all(const char * const format, ...)
 {
-va_list lastpato;
+va_list args;
 int k = 0;
-char c;
-int i;
-float f;
-char *s;
+char *sep = "", *str;
 
-va_start(lastpato, format);
-while (format && format[k] != '\0')
-{
-if (format[k] == 'c')
-{
-c = va_arg(lastpato, int);
-printf("%c", c);
-}
-else if (format[k] == 'i')
-{
-i = va_arg(lastpato, int);
-printf("%d", i);
-}
-else if (format[k] == 'f')
-{
-f = va_arg(lastpato, double);
-printf("%f", f);
-}
-else if (format[k] == 's')
-{
-s = va_arg(lastpato, char*);
-if (s == NULL)
-s = "(nil)";
-printf("%s", s);
-}
+va_start(args, format);
 
+while (format && format[k])
+{
+switch (format[k])
+{
+case 'c':
+printf("%s%c", sep, va_arg(args, int));
+break;
+case 'i':
+printf("%s%d", sep, va_arg(args, int));
+break;
+case 'f':
+printf("%s%f", sep, va_arg(args, double));
+break;
+case 's':
+str = va_arg(args, char *);
+if (!str)
+str = "(nil)";
+printf("%s%s", sep, str);
+break;
+default:
+k++;
+continue;
+}
+sep = ", ";
 k++;
 }
 
-va_end(lastpato);
+va_end(args);
 printf("\n");
 }
+
 
