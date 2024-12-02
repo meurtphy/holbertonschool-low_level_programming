@@ -26,7 +26,7 @@ else
 
 {
 
-printf("[%lu] %s\n", strlen(h->str), h->str);
+printf("[%u] %s\n", h->len, h->str);
 
 }
 count++;
