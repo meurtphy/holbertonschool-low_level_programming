@@ -21,7 +21,7 @@ if (idx == 0)
 return (add_dnodeint(h, n));
 
 current = *h;
-for (i = 0; current != NULL && i < idx - 1; i++) /* Parcourir jusqu'à idx - 1 */
+for (i = 0; current != NULL && i < idx - 1; i++)
 current = current->next;
 
 if (current == NULL)
